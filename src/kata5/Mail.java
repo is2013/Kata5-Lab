@@ -15,4 +15,9 @@ class Mail {
     public String getDomain(){
         return address.split("@")[1];
     }
+    
+    public String getMainDomain(){
+        String[] split = address.split("\\.");
+        return split[split.length - 1];
+    }
 }

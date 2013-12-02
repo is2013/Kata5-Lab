@@ -26,7 +26,7 @@ public class ChartHistogramViewer<T> implements HistogramViewer<T>{
 
     private JFreeChart createChart(Histogram<T> histogram) {
         JFreeChart chart = ChartFactory.createBarChart("Histogram", 
-                "Emails", 
+                "Categories", 
                 "Frequency", 
                 createDataSet(histogram));
         return chart;
